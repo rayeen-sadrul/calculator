@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background: linear-gradient(#0b0c0c, #161c22);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.display {
+  background-color: rgba(24, 172, 117, 0.972);
+  height: 100px;
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+  font-size: 40px;
+  position: relative;
+}
+
+.display-1 {
+  opacity: 0.4;
+  font-size: 20px;
+  height: 23px;
+  overflow: hidden;
+}
+
+.temp-result {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  font-size: 30px;
+  opacity: 0.6;
+}
+
+.all_buttons {
+  color: rgb(27, 26, 26);
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+.button {
+  border: 0.5px solid rgba(92, 92, 92, 0.137);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.button:not(.all-clear):not(.equal):hover {
+  background-color: #c7c8d1;
+  color: black;
+}
+
+.all-clear {
+  background-color: rgb(196, 48, 48);
+}
+
+.equal {
+  background-color: black;
+  color: white;
+}
+.equal:hover {
+  background-color: green;
+  color: black;
+}
